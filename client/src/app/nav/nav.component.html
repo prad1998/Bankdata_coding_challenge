@@ -1,0 +1,26 @@
+<nav *ngIf="(user.currentUser$ | async) as user" class="navbar navbar-expand-lg navbar-green bg-green">
+  <div class="container">
+    Logged ind som {{user.userName}}
+
+    <a class="navbar-brand"></a>
+    <div class="collapse navbar-collapse">
+
+      <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/accounts" routerLinkActive="active">Se mine konti<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"routerLink="/create" routerLinkActive="active">Opret konto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/transaction" routerLinkActive="active">Lav en transaktion</a>
+        </li>
+
+      </ul>
+        </div>
+    <button class="btn btn-primary ml-auto" (click)="logout()">Log ud</button>
+
+  </div>
+
+</nav>

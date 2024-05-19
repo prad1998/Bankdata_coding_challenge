@@ -1,0 +1,16 @@
+<table *ngIf="(userService.currentUser$ | async)" class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Saldo</th>
+      <th scope="col">Oprettet</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let account of this.accounts; let i = index">
+      <th scope="row">{{account.id }}</th>
+      <td>{{account.balance}}</td>
+      <td>{{account.createdAt}}</td>
+    </tr>
+  </tbody>
+</table>

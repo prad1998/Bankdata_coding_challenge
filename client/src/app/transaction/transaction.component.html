@@ -1,0 +1,19 @@
+<ng-container>
+  <div class="login-container">
+<h2 class="text-center text-primary">Overfør</h2>
+    <form (ngSubmit)="transfer()" autocomplete="off">
+      <div class="form-group">
+        <input name="FromAccountId" [(ngModel)]="model.FromAccountId" class="form-control" type="number" placeholder="Fra">
+      </div>
+      <div class="form-group">
+        <input name="ToAccountId" [(ngModel)]="model.ToAccountId" class="form-control" type="number"
+          placeholder="Til">
+      </div>
+      <div class="form-group">
+        <input name="Amount" [(ngModel)]="model.Amount" class="form-control" type="number"
+          placeholder="Beløb">
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Overfør</button>
+    </form>
+  </div>
+</ng-container>

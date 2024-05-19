@@ -1,0 +1,52 @@
+/* You can add global styles to this file, and also import other style files */
+.html,
+body {
+
+  background-image: url('././assets/Billedebank.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.login-container {
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  height: auto;
+}
+
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.button-group {
+  margin-top: 1rem;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+
+
+@media (max-width: 1400px) {
+  body {
+      background: url('././assets/Billedebank.png') no-repeat center center fixed;
+      background-size: cover;
+  }
+
+  .text-content h1 {
+      font-size: 30px;
+      height: 120px;
+      margin: 0 0 0px;
+  }
+
+  .text-content p {
+      font-size: 16px;
+  }
+
+  header .logo {
+      width: 220px;
+  }
+}

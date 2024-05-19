@@ -1,0 +1,15 @@
+<ng-container>
+  <div class="login-container">
+<h2 class="text-center text-primary">Login</h2>
+    <form (ngSubmit)="login()" autocomplete="off">
+      <div class="form-group">
+        <input name="Username" [(ngModel)]="model.username" class="form-control" type="text" placeholder="Brugernavn">
+      </div>
+      <div class="form-group">
+        <input name="Password" [(ngModel)]="model.password" class="form-control" type="password"
+          placeholder="ID">
+      </div>
+      <button class="btn btn-primary btn-block" type="submit">Login</button>
+    </form>
+  </div>
+</ng-container>
